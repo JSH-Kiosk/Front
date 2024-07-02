@@ -155,14 +155,14 @@ export const Menu = () => {
                                 {itemState.foods.map((food: any, index: number) => (
                                     <div key={index} className='p-2 border-b border-gray-300 text-center'>
                                         <div className='flex flex-row justify-around text-[20px]'>
-                                            <CountButton title='X' onClick={() => deleteItemClicked(food.name, food.options)} />
+                                            <CountButton title='X' onClick={() => deleteItemClicked(food.name, food.options)} className='sm:text-[15px]' />
                                             <div className='w-[20vw] break-keep sm:text-[10px]'>
                                                 {food.name}
                                             </div>
-                                            <div className='flex flex-row justify-around w-[15vw] break-keep sm:text-[10px]'>
-                                                <CountButton title='-' onClick={() => countItemClicked(food.name, food.options, -1)} />
+                                            <div className='flex flex-row justify-around w-[15vw] break-keep sm:text-[10px] items-center'>
+                                                <CountButton title='-' onClick={() => countItemClicked(food.name, food.options, -1)} className='sm:mr-[5px]' />
                                                 {food.count}
-                                                <CountButton title='+' onClick={() => countItemClicked(food.name, food.options, 1)} />
+                                                <CountButton title='+' onClick={() => countItemClicked(food.name, food.options, 1)} className='sm:ml-[5px]' />
                                             </div>
                                             {food.options.map((option: any, index: number) => (
                                                 <div key={index} className='flex flex-row'>

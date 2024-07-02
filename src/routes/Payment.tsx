@@ -41,7 +41,7 @@ export const Payment = () => {
                     itemState.foods.length > 0 && (
                         <div className='flex flex-col teduri rounded-[10px] p-[20px] text-[20px] sm:p-[10px] sm:text-[10px]'>
                             {itemState.foods.map((food: any, index: number) => (
-                                <div key={index} className='flex flex-row justify-around text-center border-b-2 border-[gray] mb-[20px]'>
+                                <div key={index} className='flex flex-row justify-around text-center border-b-2 border-[gray] mb-[20px] items-center'>
                                     <div className='w-[20vw] break-keep '>
                                         {food.name}
                                     </div>
